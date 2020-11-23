@@ -1,0 +1,26 @@
+  
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int c0;
+    int steps;
+    cout<<"Enter a non-negative and non-zero integer: ";
+    cin>> c0;
+    while(c0!=1){
+    if (c0 % 2==0){
+        c0=c0/2;
+        cout<<c0<<endl;
+        steps++;
+    }
+    else {
+        c0=(c0*3) + 1;
+        cout<<c0<<endl;
+        steps++;
+    }
+    }
+
+    cout<<"Steps = "<<steps<<endl;
+}

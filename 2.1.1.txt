@@ -1,0 +1,21 @@
+  
+#include <iostream>
+using namespace std;
+int main(void) {
+int year;
+cout << "Enter a year: ";
+cin >> year;
+
+if (year >= 1582){
+cout << "The year belongs to the Gregorian era ";
+if (year%4==0 || year%400==0)
+cout << "\nLeap year";
+else {
+cout << "\nCommon year";}}
+else {
+    cout << "The year does not belong to the Gregorian era\n";
+
+
+}
+return 0;
+}

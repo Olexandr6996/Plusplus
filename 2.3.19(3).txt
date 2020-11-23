@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int num = 2;
+    
+    cout<<"Hello, enter degree 2: ";
+    
+    int degr;
+    
+    cin >> degr;
+
+    for (int i = 1; i < degr; i++)
+         {
+        
+        num = num * 2; 
+        
+          }
+        
+    cout << "2 to the extent of " << degr << " equals " << num;
+        
+    return 0;
+}

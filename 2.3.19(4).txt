@@ -1,0 +1,50 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double num = 2.0;
+    
+    cout<<"Hello, enter degree 2: ";
+    
+    int degr;
+    
+    cin >> degr;
+if (degr < 0)
+{
+    for (int i = 1; i > degr; i--)
+         {
+        
+        num = num / 2; 
+        
+          }
+        
+}
+
+else if (degr > 0)
+{
+    
+        for (int i = 1; i < degr; i++)
+         {
+        
+        num = num * 2; 
+        
+          }
+ 
+}
+
+
+else
+{
+  
+      cout << "2 to the extent of " << degr << " equals 1";
+      goto end;
+  
+}        
+    cout << "2 to the extent of " << degr << " equals " << num;
+        
+        
+    end:    
+    return 0;
+}
